@@ -1,0 +1,64 @@
+[
+  {
+    "namespace": "Role",
+    "object": "warehouse",
+    "relation": "member",
+    "subject_id": "01KQ1Q0DZJSTQM611Q8X9KM08W"
+  },
+  {
+    "namespace": "Role",
+    "object": "office",
+    "relation": "member",
+    "subject_id": "01KQ1Q0KNSSKP50Y8ZT2K84GM4"
+  },
+  {
+    "namespace": "Order",
+    "object": "*",
+    "relation": "create",
+    "subject_set": {
+      "namespace": "Role",
+      "object": "office",
+      "relation": "member"
+    }
+  },
+  {
+    "namespace": "Order",
+    "object": "*",
+    "relation": "delete",
+    "subject_set": {
+      "namespace": "Role",
+      "object": "office",
+      "relation": "member"
+    }
+  },
+  {
+    "namespace": "Order",
+    "object": "*",
+    "relation": "patch",
+    "subject_set": {
+      "namespace": "Role",
+      "object": "office",
+      "relation": "member"
+    }
+  },
+  {
+    "namespace": "Order",
+    "object": "*",
+    "relation": "read",
+    "subject_set": {
+      "namespace": "Role",
+      "object": "warehouse",
+      "relation": "member"
+    }
+  },
+  {
+    "namespace": "Order",
+    "object": "*",
+    "relation": "read",
+    "subject_set": {
+      "namespace": "Role",
+      "object": "office",
+      "relation": "member"
+    }
+  }
+]
