@@ -8,6 +8,12 @@ start:
 	uv run python -m src.bootstrap
 	uv run python -m src.main
 
+seed:
+	keto relation-tuple create ./var/relation-tuples.json \
+		--write-remote 127.0.0.1:4467 \
+		--insecure-disable-transport-security \
+		--block
+
 dump:
 	@for ns in User Role Order OrderItem; do \
 		keto relation-tuple get \
