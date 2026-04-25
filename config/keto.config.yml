@@ -1,0 +1,17 @@
+version: v26.2.0
+
+log:
+  level: debug
+
+namespaces:
+  location: file://./config/namespaces.keto.ts
+
+serve:
+  read:
+    host: 127.0.0.1
+    port: 4466
+  write:
+    host: 127.0.0.1
+    port: 4467
+
+dsn: sqlite3://./keto.db?_fk=true

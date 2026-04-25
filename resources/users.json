@@ -1,0 +1,12 @@
+[
+  {
+    "id": "01KQ1Q0KNSSKP50Y8ZT2K84GM4",
+    "email": "jeff@theworker.com",
+    "groups": ["office"]
+  },
+  {
+    "id": "01KQ1Q0DZJSTQM611Q8X9KM08W",
+    "email": "mike@theworker.com",
+    "groups": ["warehouse"]
+  }
+]
